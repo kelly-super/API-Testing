@@ -43,6 +43,20 @@
 		},
 		{
 			"name": "GetBookingIds",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "874d0c6a-59d6-4c04-b4af-74c5931a1b04",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "fe4be94c-62c8-475c-9717-1c71cef6463c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -282,12 +296,12 @@
 	],
 	"variable": [
 		{
-			"id": "95388a76-30ed-4f76-b3f2-0d7d73bfbbfa",
+			"id": "d55febda-ffd0-44e3-bac3-f7a4f92d4420",
 			"key": "baseUrl",
 			"value": "https://restful-booker.herokuapp.com"
 		},
 		{
-			"id": "33d9fef1-e131-4e28-8889-e161ad04186f",
+			"id": "70643fa5-54d7-4ad6-a484-43fa6ec6fdbe",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
