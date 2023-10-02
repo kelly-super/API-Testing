@@ -51,6 +51,9 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -296,12 +299,12 @@
 	],
 	"variable": [
 		{
-			"id": "d55febda-ffd0-44e3-bac3-f7a4f92d4420",
+			"id": "cbd7a72c-e9f6-4d5a-b9e9-cb496f0f9769",
 			"key": "baseUrl",
 			"value": "https://restful-booker.herokuapp.com"
 		},
 		{
-			"id": "70643fa5-54d7-4ad6-a484-43fa6ec6fdbe",
+			"id": "3f1040d0-1953-424a-a654-79d79528a2e0",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
