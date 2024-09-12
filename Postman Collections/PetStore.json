@@ -36,6 +36,7 @@
 									"    pm.expect(jsonData.id).to.eql(Number(pm.environment.get(\"pet_id\")));\r",
 									"    pm.expect(jsonData.name).to.eql(\"doggie\"+pm.environment.get(\"pet_id\"));\r",
 									"    pm.expect(jsonData.status).to.eql(\"available\");\r",
+									"    console.log(\"this is a test\");\r",
 									"});"
 								],
 								"type": "text/javascript",
